@@ -57,7 +57,7 @@ body {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro', 'YuGothic', 'Yu Gothic', '游ゴシック', 'Meiryo', 'メイリオ', Helvetica, sans-serif;
   font-size: 1.4rem;
   color: $black;
-  background: #fff;
+  background: #f4f4f4;
   line-height: 1.7;
 }
 
@@ -98,4 +98,9 @@ img {
       }
     }
   }
+}
+
+// wrapper
+.l-wrapper {
+  padding: 96px 24px 0;
 }
