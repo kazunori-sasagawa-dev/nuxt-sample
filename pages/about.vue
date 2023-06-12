@@ -16,8 +16,7 @@ export default {
   data() {
     return {
       meta: {
-        title: 'ブログサイト。',
-        type: 'website'
+        title: 'このサイトについて'
       }
     }
   }
