@@ -57,7 +57,7 @@ body {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro', 'YuGothic', 'Yu Gothic', '游ゴシック', 'Meiryo', 'メイリオ', Helvetica, sans-serif;
   font-size: 1.4rem;
   color: $black;
-  background: #fff;
+  background: #f4f4f4;
   line-height: 1.7;
 }
 
@@ -85,17 +85,28 @@ img {
 
 // PC SP switch
 .switch {
-  &_display {
-    &-pc {
+  &__display {
+    &--pc {
       @media screen and (max-width: $SP) {
         display: none;
       }
     }
 
-    &-sp {
+    &--sp {
       @media screen and (min-width: $SP) {
         display: none;
       }
     }
   }
+}
+
+// layout
+.l-wrapper {
+  padding: 96px 24px 0;
+  @media screen and (max-width: $SP) {
+    padding: 88px 24px 0;
+  }
+}
+.l-main {
+  margin-top: 24px;
 }
