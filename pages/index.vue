@@ -35,7 +35,6 @@ export default {
 
 <style lang="scss">
 @import '@/assets/sass/variables.scss';
-@import url('https://fonts.googleapis.com/earlyaccess/nicomoji.css');
 .p-mainVisual {
   &__inner {
     display: flex;

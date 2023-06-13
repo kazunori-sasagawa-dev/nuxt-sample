@@ -13,7 +13,10 @@ export default {
       { hid: 'description', name: 'description', content: 'nuxt.jsで作るブログサイト。' },
       { hid: 'og:image', name: 'og:image', content: 'http://localhost:3000/img_ogp_01.png' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/earlyaccess/nicomoji.css' }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

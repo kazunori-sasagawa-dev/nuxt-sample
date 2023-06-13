@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss">
 @import '@/assets/sass/variables.scss';
-@import url('https://fonts.googleapis.com/earlyaccess/nicomoji.css');
 .l-header {
   position: fixed;
   top: 24px;
