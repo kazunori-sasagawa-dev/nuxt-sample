@@ -38,6 +38,10 @@ export default {
     background: #fff;
     margin: 0 auto;
     padding: 0 24px;
+    @media screen and (max-width: $SP) {
+      height: 64px;
+      padding: 0 16px;
+    }
   }
 
   &__titleLink {
@@ -45,6 +49,9 @@ export default {
     font-size: 2.4rem;
     color: $black;
     text-decoration: none;
+    @media screen and (max-width: $SP) {
+      font-size: 1.8rem;
+    }
 
     &:visited {
       color: $black;

@@ -85,14 +85,14 @@ img {
 
 // PC SP switch
 .switch {
-  &_display {
-    &-pc {
+  &__display {
+    &--pc {
       @media screen and (max-width: $SP) {
         display: none;
       }
     }
 
-    &-sp {
+    &--sp {
       @media screen and (min-width: $SP) {
         display: none;
       }
@@ -100,7 +100,13 @@ img {
   }
 }
 
-// wrapper
+// layout
 .l-wrapper {
   padding: 96px 24px 0;
+  @media screen and (max-width: $SP) {
+    padding: 88px 24px 0;
+  }
+}
+.l-main {
+  margin-top: 24px;
 }

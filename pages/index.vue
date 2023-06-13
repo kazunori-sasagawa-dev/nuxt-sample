@@ -2,34 +2,41 @@
   <div class="l-contents">
     <div class="p-mainVisual">
       <div class="p-mainVisual__inner">
-        <h1 class="p-mainVisual__title">nuxtブログ</h1>
+        <h1 class="p-mainVisual__title">nuxt<br class="switch__display--sp" />ブログ</h1>
       </div>
     </div>
+    <ArticleList v-if="posts != 0" :posts="posts" />
   </div>
 </template>
 
 <script>
 import Meta from '@/mixins/meta_01.js'
+import ArticleList from '@/components/category/ArticleList'
 
 export default {
+  components: {
+    ArticleList
+  },
   mixins: [Meta],
   data() {
     return {
       meta: {
-        title: 'ブログサイト。',
+        title: 'nuxtブログ',
         type: 'website'
       }
     }
+  },
+  async asyncData({ $content }) {
+    const posts = await $content('post').sortBy('createdAt', 'desc').limit('10').fetch()
+    return { posts }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/sass/variables.scss';
 @import url('https://fonts.googleapis.com/earlyaccess/nicomoji.css');
 .p-mainVisual {
-  margin-top: 24px;
-
   &__inner {
     display: flex;
     align-items: center;
@@ -40,6 +47,9 @@ export default {
     height: 640px;
     background: $black;
     margin: 0 auto;
+    @media screen and (max-width: $SP) {
+      height: 320px;
+    }
 
     &::after {
       content: '';
@@ -60,6 +70,10 @@ export default {
     font-family: 'Nico Moji';
     font-size: 7rem;
     color: #fff;
+    @media screen and (max-width: $SP) {
+      line-height: 1.2;
+      text-align: center;
+    }
   }
 }
 </style>

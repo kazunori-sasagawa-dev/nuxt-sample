@@ -1,7 +1,7 @@
 <template>
   <div class="l-wrapper">
     <Header />
-    <main class="main">
+    <main class="l-main">
       <Nuxt />
     </main>
     <Footer />
