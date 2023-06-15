@@ -1,7 +1,7 @@
 ---
 title: テスト投稿
 description: 説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。
-category: Sample
+category: category1
 ---
 
 # h1 タイトル

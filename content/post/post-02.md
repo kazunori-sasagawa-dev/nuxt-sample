@@ -1,7 +1,7 @@
 ---
 title: foodoサイト制作紹介
 description: 2022年8月頃より、Nuxt.jsにて制作したwebSite（主にフロント部分の制作を担当）
-category: Works
+category: category2
 ---
 
 2022年8月〜2023年5月迄、Nuxt.jsにて制作したwebSite（主にフロント部分の制作を担当）※2023年5月サイトクローズ
