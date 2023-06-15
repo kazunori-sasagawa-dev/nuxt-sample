@@ -23,7 +23,7 @@ export default {
         { hid: 'og:image', name: 'og:image', content: `${this.$route.fullPath}img_ogp_01.png` }
       ],
       link: [
-        { rel: 'canonical', href: `http://localhost:3000${this.$route.fullPath}` }
+        { rel: 'canonical', href: `${this.$config.baseURL}${this.$route.fullPath}` }
       ]
     }
   }
