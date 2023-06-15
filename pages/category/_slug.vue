@@ -16,14 +16,14 @@ export default Vue.extend({
   components: {
     ArticleList
   },
-  async asyncData({ store, $content, params }) {
-    const posts = await $content('post').sortBy('createdAt', 'desc').where({ category: { $contains: params.slug } }).fetch()
-    return { posts }
-  },
   data() {
     return {
       category: [...taxonomy.category]
     }
+  },
+  async asyncData({ store, $content, params }) {
+    const posts = await $content('post').sortBy('createdAt', 'desc').where({ category: { $contains: params.slug } }).fetch()
+    return { posts }
   },
   head() {
     return {
