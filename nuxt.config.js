@@ -10,8 +10,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { hid: 'description', name: 'description', content: 'nuxt.jsで作るブログサイト。' },
-      { hid: 'og:image', name: 'og:image', content: 'http://localhost:3000/img_ogp_01.png' }
+      { hid: 'description', name: 'description', content: 'nuxt.jsで作るブログサイト。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -42,5 +41,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL || 'http://locahost:3000'
   }
 }

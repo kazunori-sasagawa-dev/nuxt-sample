@@ -34,6 +34,7 @@ export default Vue.extend({
         { hid: 'og:title', name: 'og:title', content: this.getCatName(this.$route.params.slug) + ' - nuxt.jsで作るポートフォリオ用のブログサイト。' },
         { hid: 'og:description', name: 'og:description', content: this.getCatName(this.$route.params.slug) + '記事一覧' },
         { hid: 'og:url', name: 'og:url', content: this.$route.fullPath },
+        { hid: 'og:image', name: 'og:image', content: `${this.$config.baseURL}/img_ogp_01.png` }
       ]
     }
   },
