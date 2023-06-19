@@ -3,7 +3,7 @@ export default {
     return {
       meta: {
         type: 'article',
-        url: `http://localhost:3000${this.$route.fullPath}`,
+        url: `${this.$config.baseURL}${this.$route.fullPath}`,
         image: `${this.$config.baseURL}/img_ogp_01.png`
       }
     }
