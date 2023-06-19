@@ -2,7 +2,10 @@
   <section class="p-category">
     <h1 class="p-category__title">{{ getCatName($route.params.slug) }}</h1>
     <div class="p-category__content">
-      <ArticleList :posts="posts" />
+      <!-- <ArticleList :posts="posts" /> -->
+      <div v-for="post in posts" :key="post.slug">
+        <p>{{ post.title }}</p>
+      </div>
     </div>
   </section>
 </template>

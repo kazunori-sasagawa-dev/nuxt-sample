@@ -1,6 +1,6 @@
 <template>
   <section class="p-archive">
-    <h2 class="p-archive__title">WORKS</h2>
+    <h2 v-if="$route.name === 'index'" class="p-archive__title">WORKS</h2>
     <ul class="p-archive__list">
       <li v-for="post in posts" :key="post.slug" class="p-archive__item">
         <nuxt-link :to="{ name: 'post-slug', params: { slug: post.slug } }" class="p-archive__link">
@@ -51,13 +51,16 @@ export default Vue.extend({
   &__title {
     font-size: 2.4rem;
     font-weight: $fontWeightBold;
+
+    & + [class*='__list'] {
+      margin-top: 24px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 48px;
-    margin-top: 24px;
     @media screen and (max-width: $SP) {
       display: block;
     }
