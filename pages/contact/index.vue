@@ -5,6 +5,7 @@
     <div class="p-contact__contents">
       <client-only>
         <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" class="p-contact__form">
+          <input type="hidden" name="form-name" value="contact" />
 
           <div class="p-contact__item">
             <label for="username" class="p-contact__label">お名前</label>
@@ -26,10 +27,10 @@
             <textarea id="message" name="message" rows="5" class="p-contact__textarea"></textarea>
           </div>
 
-          <!-- <div v-show="false" class="p-contact__item">
+          <div v-show="false" class="p-contact__item">
             <label for="message" class="p-contact__label">スパムではない場合空欄</label>
-            <input type="text" name="bot-field" v-model="botField" />
-          </div> -->
+            <input type="text" name="bot-field" />
+          </div>
 
           <div class="p-contact__item">
             <button type="submit" class="p-contact__submit isActive">送信</button>
