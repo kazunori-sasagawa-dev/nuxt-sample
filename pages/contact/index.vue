@@ -3,37 +3,39 @@
     <h2 class="p-contact__title">お問い合わせ</h2>
     <p class="p-contact__lead">フォームに必要事項を入力し、<br class="switch__display--sp" />送信ボタンをおしてください。</p>
     <div class="p-contact__contents">
-      <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" class="p-contact__form">
+      <client-only>
+        <form method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" class="p-contact__form">
 
-        <div class="p-contact__item">
-          <label for="username" class="p-contact__label">お名前</label>
-          <input type="text" id="username" name="username" autocomplete="username" class="p-contact__input">
-        </div>
+          <div class="p-contact__item">
+            <label for="username" class="p-contact__label">お名前</label>
+            <input type="text" id="username" name="username" autocomplete="username" class="p-contact__input">
+          </div>
 
-        <div class="p-contact__item">
-          <label for="katakana" class="p-contact__label">フリガナ</label>
-          <input type="text" id="katakana" name="katakana" autocomplete="katakana" class="p-contact__input">
-        </div>
+          <div class="p-contact__item">
+            <label for="katakana" class="p-contact__label">フリガナ</label>
+            <input type="text" id="katakana" name="katakana" autocomplete="katakana" class="p-contact__input">
+          </div>
 
-        <div class="p-contact__item">
-          <label for="usermail" class="p-contact__label">メールアドレス</label>
-          <input type="text" id="usermail" name="usermail" autocomplete="usermail" class="p-contact__input">
-        </div>
+          <div class="p-contact__item">
+            <label for="usermail" class="p-contact__label">メールアドレス</label>
+            <input type="text" id="usermail" name="usermail" autocomplete="usermail" class="p-contact__input">
+          </div>
 
-        <div class="p-contact__item">
-          <label for="message" class="p-contact__label">お問い合わせ内容</label>
-          <textarea id="message" name="message" rows="5" class="p-contact__textarea"></textarea>
-        </div>
+          <div class="p-contact__item">
+            <label for="message" class="p-contact__label">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="5" class="p-contact__textarea"></textarea>
+          </div>
 
-        <!-- <div v-show="false" class="p-contact__item">
-          <label for="message" class="p-contact__label">スパムではない場合空欄</label>
-          <input type="text" name="bot-field" v-model="botField" />
-        </div> -->
+          <!-- <div v-show="false" class="p-contact__item">
+            <label for="message" class="p-contact__label">スパムではない場合空欄</label>
+            <input type="text" name="bot-field" v-model="botField" />
+          </div> -->
 
-        <div class="p-contact__item">
-          <button type="submit" class="p-contact__submit isActive">送信</button>
-        </div>
-      </form>
+          <div class="p-contact__item">
+            <button type="submit" class="p-contact__submit isActive">送信</button>
+          </div>
+        </form>
+      </client-only>
     </div>
   </section>
 </template>
