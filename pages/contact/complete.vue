@@ -8,6 +8,14 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: '送信完了しました' + ' - nuxt.jsで作るポートフォリオ用のブログサイト。',
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex, nofollow' }
+      ]
+    }
+  },
   mounted() {
     setTimeout(() => {
       window.location.href = '/'
