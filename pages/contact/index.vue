@@ -4,7 +4,7 @@
     <p class="p-contact__lead">フォームに必要事項を入力し、<br class="switch__display--sp" />送信ボタンをおしてください。</p>
     <div class="p-contact__contents">
       <ValidationObserver ref="obs" v-slot="{ invalid, validated }" tag="form" action="mail-sent" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" class="p-contact__form" :class="sendingClass">
-        <input type="hidden" name="form-name" class="p-contact__input--hidden">
+        <!-- <input type="hidden" name="form-name" class="p-contact__input--hidden"> -->
 
         <div class="p-contact__item">
           <label for="username" class="p-contact__label">お名前</label>
