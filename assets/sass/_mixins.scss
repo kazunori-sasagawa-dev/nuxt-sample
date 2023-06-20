@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// variables
+@import '@/assets/sass/variables';
+
+// width 1280
+@mixin container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+// title bg-gray
+@mixin title {
+  font-size: 2.4rem;
+  background: #eee;
+  text-align: center;
+  padding: 24px;
+  @media screen and (max-width: $SP) {
+    font-size: 1.8rem;
+    padding: 16px;
+  }
+}

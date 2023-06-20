@@ -4,8 +4,7 @@
       <p class="l-header__title"><a href="/" class="l-header__titleLink">nuxtブログ</a></p>
       <nav class="l-header__navigation">
         <ul class="l-header__list">
-          <li class="l-header__item">works</li>
-          <li class="l-header__item">profile</li>
+          <li class="l-header__item"><a href="/contact" class="l-header__link">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -64,6 +63,16 @@ export default {
   &__item {
     & + & {
       margin-left: 24px;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $black;
+    text-decoration: none;
+
+    &:visited {
+      color: $black;
     }
   }
 }

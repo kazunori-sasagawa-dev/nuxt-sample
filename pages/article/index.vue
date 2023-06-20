@@ -33,15 +33,12 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+@import '@/assets/sass/mixins';
 .p-article {
-  max-width: 1280px;
-  margin: 0 auto;
+  @include container;
 
   &__title {
-    font-size: 2.4rem;
-    background: #eee;
-    text-align: center;
-    padding: 24px;
+    @include title;
   }
 }
 </style>
