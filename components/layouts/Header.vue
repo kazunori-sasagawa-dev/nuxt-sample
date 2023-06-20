@@ -4,6 +4,7 @@
       <p class="l-header__title"><a href="/" class="l-header__titleLink">nuxtブログ</a></p>
       <nav class="l-header__navigation">
         <ul class="l-header__list">
+          <li class="l-header__item"><a href="/article" class="l-header__link">works</a></li>
           <li class="l-header__item"><a href="/contact" class="l-header__link">contact</a></li>
         </ul>
       </nav>
@@ -63,6 +64,9 @@ export default {
   &__item {
     & + & {
       margin-left: 24px;
+      @media screen and (max-width: $SP) {
+        margin-left: 16px;
+      }
     }
   }
 
@@ -70,6 +74,9 @@ export default {
     font-size: 1.6rem;
     color: $black;
     text-decoration: none;
+    @media screen and (max-width: $SP) {
+      font-size: 1.4rem;
+    }
 
     &:visited {
       color: $black;
