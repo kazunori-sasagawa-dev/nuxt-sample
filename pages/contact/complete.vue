@@ -53,6 +53,10 @@ export default {
     text-align: center;
     margin: 48px auto 0;
     padding: 16px 0;
+    border-radius: 4px;
+    @media screen and (max-width: $SP) {
+      max-width: 100%;
+    }
 
     &:visited {
       color: #fff;

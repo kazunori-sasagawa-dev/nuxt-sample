@@ -27,6 +27,10 @@ export default {
   z-index: 10;
   width: 100%;
   padding: 0 24px;
+  @media screen and (max-width: $SP) {
+    top: 0;
+    padding: 0;
+  }
 
   &__inner {
     display: flex;
@@ -37,9 +41,11 @@ export default {
     background: #fff;
     margin: 0 auto;
     padding: 0 24px;
+    border-radius: 8px;
     @media screen and (max-width: $SP) {
       height: 64px;
       padding: 0 16px;
+      border-radius: 0;
     }
   }
 

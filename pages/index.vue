@@ -46,6 +46,7 @@ export default {
     height: 640px;
     background: $black;
     margin: 0 auto;
+    border-radius: 24px;
     @media screen and (max-width: $SP) {
       height: 320px;
     }

@@ -61,6 +61,9 @@ export default Vue.extend({
     display: flex;
     flex-wrap: wrap;
     gap: 48px 48px;
+    @media screen and (max-width: 1050px) {
+      gap: 48px 16px;
+    }
     @media screen and (max-width: $SP) {
       display: block;
     }
@@ -68,6 +71,9 @@ export default Vue.extend({
 
   &__item {
     width: calc((100% - 144px) / 4);
+    @media screen and (max-width: 1050px) {
+      width: calc((100% - 48px) / 4);
+    }
     @media screen and (max-width: $SP) {
       width: 100%;
 
@@ -85,6 +91,10 @@ export default Vue.extend({
     &:visited {
       color: $black;
     }
+  }
+
+  &__image {
+    border-radius: 8px;
   }
 
   &__name {

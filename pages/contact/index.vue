@@ -101,6 +101,7 @@ export default {
     background: #fff;
     margin: 48px auto 0;
     padding: 32px;
+    border-radius: 8px;
     @media screen and (max-width: $SP) {
       background: none;
       margin-top: 16px;
@@ -123,7 +124,8 @@ export default {
     width: 100%;
     background: #eee;
     margin-top: 4px;
-    padding: 8px
+    padding: 8px;
+    border-radius: 4px
   }
 
   &__textarea {
@@ -144,7 +146,11 @@ export default {
     text-align: center;
     margin: 0 auto;
     padding: 16px;
+    border-radius: 4px;
     transition: 0.8s;
+    @media screen and (max-width: $SP) {
+      width: 100%;
+    }
 
     &.isActive {
       color: #fff;
